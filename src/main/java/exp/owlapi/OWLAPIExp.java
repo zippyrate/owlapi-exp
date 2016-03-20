@@ -21,9 +21,9 @@ public class OWLAPIExp
 
       for (SWRLRule swrlRule : ontology.getAxioms(AxiomType.SWRL_RULE, Imports.INCLUDED)) {
         for (SWRLAtom swrlAtom: swrlRule.getBody())
-          System.out.println("Head SWRLAtom: " + swrlAtom);
-        for (SWRLAtom swrlAtom: swrlRule.getHead())
           System.out.println("Body SWRLAtom: " + swrlAtom);
+        for (SWRLAtom swrlAtom: swrlRule.getHead())
+          System.out.println("Head SWRLAtom: " + swrlAtom);
 
       }
     } catch (OWLOntologyCreationException e) {
